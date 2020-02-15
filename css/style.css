@@ -4,7 +4,6 @@
 /* ==== overwrite bootstrap standard ==== */
 @import url('overwrite.css');
 
-
 /* ==== additional style for bootstrap ==== */
 .well.well-primary, .bg-primary, .box-primary {
 	background: #009cea;
