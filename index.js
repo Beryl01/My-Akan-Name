@@ -17,11 +17,12 @@ function akanNames() {
     } else {
         gender = 'female';
     }
-    
+
     // date val
     if (MM < 0 || MM > 12) {
         alert("invalid month ");
     }
+    
     // checking if day is correct and does not exceed limit.  if its not correct alert user
     else if (DD < 0 || DD > 31) {
         alert("invalid  Date");
