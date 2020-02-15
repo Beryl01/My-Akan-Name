@@ -22,11 +22,12 @@ function akanNames() {
     if (MM < 0 || MM > 12) {
         alert("invalid month ");
     }
-    
+
     // checking if day is correct and does not exceed limit.  if its not correct alert user
     else if (DD < 0 || DD > 31) {
         alert("invalid  Date");
     }
+
     // validating february month ...leap year to be checked
     else if (MM == 2 && DD > 29) {
         alert("This month does not have those number of days");
