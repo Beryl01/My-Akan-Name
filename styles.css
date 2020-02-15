@@ -1,0 +1,20 @@
+.btm{
+    background: darkslategray;
+    color:white;
+    padding: 0.6rem 1.3rem;
+    border: 0;
+    text-decoration: none;
+}
+
+#day{
+    width:800px
+}
+#month{
+    width: 800px;
+}
+#year{
+    width:800px
+}
+.fonty{
+    font-size: 25px;
+}
