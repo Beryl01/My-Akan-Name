@@ -1,9 +1,10 @@
 function akanNames() {
     var day = document.getElementById("day").value;
     var DD = parseInt(day);
-    
+
     var month = document.getElementById("month").value;
     var MM = parseInt(month);
+    
     var year = document.getElementById("year").value;
     var YY = parseInt(year);
     var CC = parseInt(YY - 1) / 100 + 1; //cc -> century
