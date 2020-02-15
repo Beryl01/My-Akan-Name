@@ -36,6 +36,7 @@ function akanNames() {
     else if (YY < 1000 || YY > 2020) {
         alert("Invalid year");
     }
+    
     //maleNames
     //Monday
     else if (Math.ceil(dayOfTheWeek) == 1 && gender === 'male') {
