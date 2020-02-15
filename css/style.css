@@ -59,7 +59,6 @@ blockquote {
 .row{
 	margin-bottom:40px;
 }
-
 .row .row, .row-fluid .row{
 	margin-bottom:0;
 }
