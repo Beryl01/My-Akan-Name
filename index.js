@@ -1,4 +1,4 @@
-function akanNames(){
+function akanNames() {
     var day = document.getElementById("day").value;
     var DD = parseInt(day);
     var month = document.getElementById("month").value;
