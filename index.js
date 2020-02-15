@@ -17,6 +17,7 @@ function akanNames() {
     } else {
         gender = 'female';
     }
+    
     // date val
     if (MM < 0 || MM > 12) {
         alert("invalid month ");
