@@ -16,7 +16,7 @@ Beryl Negesa Otieno
 * CSS
 * Javascript
 ## {Live Link}
- https://beryl01.github.io/Find-my-Akan-Name/.
+ https://beryl01.github.io/My-Akan-Name/
 ## {Support and contact details}
 For Further questions and assistance reach me on:
 * email: beryl00002@gmail.com.
