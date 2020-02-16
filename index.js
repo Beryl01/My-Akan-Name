@@ -5,6 +5,7 @@ function akanNames () {
     var year =parseInt(document.getElementById("year").value);
     var month=parseInt(document.getElementById("month").value);
     var day=parseInt(document.getElementById("day").value);
+    var dayOfTheWeek = parseInt(((CC / 4) - 2 * CC - 1) + ((5 * YY / 4)) + ((26 * (MM + 1) / 10)) + DD) % 7; //day of the week
     var gender=getGender();
     var date = new Date(year +"/" + month + "/"+day);
     var dayBorn = date.getDay();
@@ -23,16 +24,22 @@ function akanNames () {
     else if (validate == false) {
         alert("Invalid Input");
     }
+        // validating february month ...leap year to be checked
+    else if (MM == 2 && DD > 29) {
+        alert("This month does not have those number of days");
+    }
+        // validating year
+    else if (YY < 1000 || YY > 2020) {
+        alert("Invalid year");
+    }
     if(gender ==="male" && year > 0 && month > 0 && month < 13 && day > 0 && day < 32){
         akanName = maleNames[dayBorn];
         document.getElementById("results").innerHTML =
-    // "Your day name is "+ dayOfTheWeek[dayBorn]+ " and your Akan name is " +akanName;
     "Your name is " + akanName + " ,which means you were born on a "+ dayOfTheWeek[dayBorn];
     }
     else if (gender === "female" && year > 0 && month > 0 && month < 13 && day > 0 && day < 32){
         akanName = femaleNames[dayBorn];
         document.getElementById("results").innerHTML =
-    // "You were born on "+ dayOfTheWeek[dayBorn]+ " and your Akan name is " +akanName;
     "Your name is " + akanName + " ,which means you were born on a "+ dayOfTheWeek[dayBorn];
     }
 }

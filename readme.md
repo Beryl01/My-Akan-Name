@@ -22,7 +22,7 @@ For Further questions and assistance reach me on:
 * email: beryl00002@gmail.com.
 * phone: +254 70123456.
 ## {Copyright and license information}
-Portfolio &copy 2020 Version 1.0.
+© Akan Name - All right reserved
 
 
 
