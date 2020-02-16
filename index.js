@@ -24,11 +24,11 @@ function akanNames () {
     else if (validate == false) {
         alert("Invalid Input");
     }
-        // validating february month ...leap year to be checked
+    // validating february month ...leap year to be checked
     else if (MM == 2 && DD > 29) {
         alert("This month does not have those number of days");
     }
-        // validating year
+    // validating year
     else if (YY < 1000 || YY > 2020) {
         alert("Invalid year");
     }
