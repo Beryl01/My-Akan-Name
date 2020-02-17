@@ -24,14 +24,6 @@ function akanNames () {
     else if (validate == false) {
         alert("Invalid Input");
     }
-    // validating february month ...leap year to be checked
-    else if (MM == 2 && DD > 29) {
-        alert("This month does not have those number of days");
-    }
-    // validating year
-    else if (YY < 1000 || YY > 2020) {
-        alert("Invalid year");
-    }
     if(gender ==="male" && year > 0 && month > 0 && month < 13 && day > 0 && day < 32){
         akanName = maleNames[dayBorn];
         document.getElementById("results").innerHTML =
