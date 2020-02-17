@@ -5,7 +5,7 @@ function akanNames () {
     var year =parseInt(document.getElementById("year").value);
     var month=parseInt(document.getElementById("month").value);
     var day=parseInt(document.getElementById("day").value);
-    var dayOfTheWeek = parseInt(((CC / 4) - 2 * CC - 1) + ((5 * YY / 4)) + ((26 * (MM + 1) / 10)) + DD) % 7; //day of the week
+    // var dayOfTheWeek = parseInt(((CC / 4) - 2 * CC - 1) + ((5 * YY / 4)) + ((26 * (MM + 1) / 10)) + DD) % 7; //day of the week
     var gender=getGender();
     var date = new Date(year +"/" + month + "/"+day);
     var dayBorn = date.getDay();
