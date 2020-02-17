@@ -21,6 +21,10 @@ function akanNames () {
     else if (day <= 0 || day > 31){
         alert("Invalid date");
     }
+        // checking if day is correct and does not exceed limit.  if its not correct alert user
+    else if (day <= 0 || day > 29){ 
+        alert("invalid  Date");
+    }
     else if (validate == false) {
         alert("Invalid Input");
     }
