@@ -11,6 +11,8 @@ Beryl Negesa Otieno
 * On the Home Page there are sections.
 * On the about section there is the Akan Name calculator.
 * At the bottom of the page is how to contact us.
+ ## {BDD}
+  * For the month of February the dates should not be more than 29days. 
 ## {Technologies Used}
 * HTML
 * CSS
