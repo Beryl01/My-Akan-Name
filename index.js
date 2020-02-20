@@ -1,38 +1,38 @@
-function akanNames() {
+function myAkanName() {
     var day = document.getElementById("day").value;
     var DD = parseInt(day);
     var month = document.getElementById("month").value;
     var MM = parseInt(month);
     var year = document.getElementById("year").value;
     var YY = parseInt(year);
-    var CC = parseInt(YY - 1) / 100 + 1; //cc -> century
-    var dayOfTheWeek = parseInt(((CC / 4) - 2 * CC - 1) + ((5 * YY / 4)) + ((26 * (MM + 1) / 10)) + DD) % 7; //day of the week
+    var CC = parseInt(YY - 1) / 100 + 1; 
+    var dayOfTheWeek = parseInt(((CC / 4) - 2 * CC - 1) + ((5 * YY / 4)) + ((26 * (MM + 1) / 10)) + DD) % 7;
     var maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
     var femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
     var gender;
-    //gender
+    //CHECKING GENDER
     if (document.getElementById("gender").checked) {
         gender = 'male';
     } else {
         gender = 'female';
     }
-    // date val
+    // CHECKING MONTH
     if (MM < 0 || MM > 12) {
         alert("invalid month ");
     }
-    // checking if day is correct and does not exceed limit.  if its not correct alert user
+    // CHECKING DAY
     else if (DD < 0 || DD > 31) {
         alert("invalid  Date");
     }
-    // validating february month ...leap year to be checked
+    // CHECKING FEBRUARY
     else if (MM == 2 && DD > 29) {
         alert("This month does not have those number of days");
     }
-    // validating year
+    // CHECKING YEAR
     else if (YY < 1000 || YY > 2020) {
         alert("Invalid year");
     }
-    //maleNames
+    //MALES
     //Monday
     else if (Math.ceil(dayOfTheWeek) == 1 && gender === 'male') {
         document.getElementById("results").innerHTML =
@@ -68,7 +68,7 @@ function akanNames() {
         document.getElementById("results").innerHTML =
             "Your day name is " + maleNames[0] + " ,which means you were born on a Sunday.";
     }
-    //femaleNames
+    //FEMALES
     //Monday
     else if (Math.ceil(dayOfTheWeek) == 1 && gender === 'female') {
         document.getElementById("results").innerHTML =
@@ -107,8 +107,3 @@ function akanNames() {
         alert('enter your information please');
     }
 }
-
-
-
-
-
